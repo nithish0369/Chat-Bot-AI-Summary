@@ -253,8 +253,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 For questions or issues:
 - Create an issue in the repository
-- Contact: [your-email@example.com]
-
----
-
-**Note**: This project was developed as a take-home assignment for an AI Engineer intern position, demonstrating full-stack development skills and AI integration capabilities.
+- Contact: nithish36900@gmail.com
