@@ -1,4 +1,4 @@
-# Censys Data Summarizer - AI Agent
+# Data Summarizer - AI Agent
 
 A full-stack AI-powered application that analyzes and summarizes Censys host data using Perplexity AI. This project demonstrates prompt engineering, AI integration, and user interface design for cybersecurity data analysis.
 
@@ -366,3 +366,4 @@ For questions or issues:
 ---
 
 **Note**: This project was developed as a take-home assignment for an AI Engineer intern position, demonstrating full-stack development skills and AI integration capabilities.
+
