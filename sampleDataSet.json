@@ -1,0 +1,277 @@
+{
+  "metadata": {
+    "description": "Synthetic sample host data for testing (expanded)",
+    "created_at": "2025-09-28",
+    "data_sources": ["synthetic_hosts"],
+    "hosts_count": 8,
+    "ips_analyzed": [
+      "203.0.113.45",
+      "198.51.100.12",
+      "192.0.2.10",
+      "203.0.113.99",
+      "198.51.100.200",
+      "192.0.2.150",
+      "203.0.113.201",
+      "198.51.100.77"
+    ]
+  },
+  "hosts": [
+    {
+      "ip": "203.0.113.45",
+      "location": {
+        "city": "San Francisco",
+        "country": "United States",
+        "country_code": "US",
+        "coordinates": { "latitude": 37.7749, "longitude": -122.4194 }
+      },
+      "autonomous_system": { "asn": 64500, "name": "ExampleNet Inc.", "country_code": "US" },
+      "services": [
+        {
+          "port": 22,
+          "protocol": "SSH",
+          "banner": "SSH-2.0-OpenSSH_9.0",
+          "software": [{ "product": "openssh", "vendor": "openbsd", "version": "9.0" }],
+          "vulnerabilities": [
+            { "cve_id": "CVE-2024-12345", "severity": "critical", "cvss_score": 9.5, "description": "Mock SSH privilege escalation" }
+          ]
+        },
+        {
+          "port": 443,
+          "protocol": "HTTPS",
+          "banner": "HTTP/1.1 200 OK",
+          "tls_enabled": true,
+          "certificate": {
+            "fingerprint_sha256": "aa11bb22cc33dd44ee55ff66aa77bb88cc99dd00ee11ff22aa33bb44cc55dd66",
+            "subject": "CN=app.example.com, O=Example App Ltd",
+            "issuer": "CN=Example CA, O=Example CA Root",
+            "self_signed": false
+          },
+          "software": [{ "product": "nginx", "vendor": "f5", "version": "1.24.0" }]
+        }
+      ],
+      "threat_intelligence": { "security_labels": ["WEB_SERVER", "REMOTE_ACCESS"], "risk_level": "medium" }
+    },
+    {
+      "ip": "198.51.100.12",
+      "location": {
+        "city": "London",
+        "country": "United Kingdom",
+        "country_code": "GB",
+        "coordinates": { "latitude": 51.5074, "longitude": -0.1278 }
+      },
+      "autonomous_system": { "asn": 64510, "name": "TestNet Ltd.", "country_code": "GB" },
+      "dns": { "hostname": "mail01.example.net" },
+      "operating_system": { "vendor": "canonical", "product": "ubuntu", "version": "22.04" },
+      "services": [
+        {
+          "port": 25,
+          "protocol": "SMTP",
+          "banner": "220 mail.example.net ESMTP Postfix",
+          "software": [{ "product": "postfix", "vendor": "open-source", "version": "3.7.3" }],
+          "vulnerabilities": [
+            { "cve_id": "CVE-2023-56789", "severity": "high", "cvss_score": 8.0, "description": "Mock SMTP buffer overflow" }
+          ]
+        },
+        {
+          "port": 3306,
+          "protocol": "MYSQL",
+          "error_message": "Access denied for user 'test'@'203.0.113.100'",
+          "software": [{ "product": "mysql", "vendor": "oracle", "version": "8.0.34" }],
+          "access_restricted": true
+        }
+      ],
+      "threat_intelligence": { "security_labels": ["MAIL_SERVER", "DATABASE"], "risk_level": "high" }
+    },
+    {
+      "ip": "192.0.2.10",
+      "location": {
+        "city": "Berlin",
+        "country": "Germany",
+        "country_code": "DE",
+        "coordinates": { "latitude": 52.52, "longitude": 13.405 }
+      },
+      "autonomous_system": { "asn": 64520, "name": "EuroTestNet", "country_code": "DE" },
+      "services": [
+        {
+          "port": 8080,
+          "protocol": "HTTP",
+          "banner": "HTTP/1.1 200 OK",
+          "software": [{ "product": "apache", "vendor": "apache", "version": "2.4.54" }],
+          "vulnerabilities": [
+            { "cve_id": "CVE-2022-99999", "severity": "medium", "cvss_score": 6.1, "description": "Mock HTTP path traversal" }
+          ]
+        },
+        {
+          "port": 22,
+          "protocol": "SSH",
+          "banner": "SSH-2.0-OpenSSH_8.6",
+          "software": [{ "product": "openssh", "vendor": "openbsd", "version": "8.6" }],
+          "vulnerabilities": []
+        }
+      ],
+      "threat_intelligence": { "security_labels": ["WEB_SERVER"], "risk_level": "medium" }
+    },
+    {
+      "ip": "203.0.113.99",
+      "location": {
+        "city": "Tokyo",
+        "country": "Japan",
+        "country_code": "JP",
+        "coordinates": { "latitude": 35.6895, "longitude": 139.6917 }
+      },
+      "autonomous_system": { "asn": 64530, "name": "AsiaHost Co", "country_code": "JP" },
+      "dns": { "hostname": "iot-gw.example.jp" },
+      "services": [
+        {
+          "port": 1883,
+          "protocol": "MQTT",
+          "banner": "MQTT",
+          "software": [{ "product": "mosquitto", "vendor": "eclipse", "version": "2.0.15" }],
+          "vulnerabilities": [
+            { "cve_id": "CVE-2024-88888", "severity": "high", "cvss_score": 8.2, "description": "Mock MQTT auth bypass" }
+          ]
+        },
+        {
+          "port": 80,
+          "protocol": "HTTP",
+          "banner": "HTTP/1.1 403 Forbidden",
+          "software": [{ "product": "lighttpd", "vendor": "lighttpd", "version": "1.4.65" }]
+        }
+      ],
+      "threat_intelligence": { "security_labels": ["IOT", "REMOTE_ACCESS"], "risk_level": "high" }
+    },
+    {
+      "ip": "198.51.100.200",
+      "location": {
+        "city": "Sydney",
+        "country": "Australia",
+        "country_code": "AU",
+        "coordinates": { "latitude": -33.8688, "longitude": 151.2093 }
+      },
+      "autonomous_system": { "asn": 64540, "name": "OceaniaCloud", "country_code": "AU" },
+      "services": [
+        {
+          "port": 21,
+          "protocol": "FTP",
+          "banner": "220 Pure-FTPd",
+          "tls_enabled": true,
+          "certificate": {
+            "fingerprint_sha256": "cc22dd33ee44ff55aa66bb77cc88dd99ee00ff11aa22bb33cc44dd55ee66ff77",
+            "subject": "CN=198.51.100.200, O=FTP Panel",
+            "issuer": "CN=198.51.100.200, O=FTP Panel",
+            "self_signed": true
+          },
+          "software": [{ "product": "pure-ftpd", "vendor": "pureftpd", "version": "1.0.49" }]
+        },
+        {
+          "port": 37035,
+          "protocol": "HTTP",
+          "banner": "HTTP/1.1 404 Not Found",
+          "tls_enabled": true,
+          "certificate": {
+            "fingerprint_sha256": "dd33ee44ff55aa66bb77cc88dd99ee00ff11aa22bb33cc44dd55ee66ff77aa88",
+            "subject": "CN=198.51.100.200, O=Panel",
+            "issuer": "CN=Panel CA, O=Panel CA",
+            "self_signed": false
+          }
+        }
+      ],
+      "threat_intelligence": { "security_labels": ["FTP", "WEB_SERVER"], "risk_level": "high", "malware_families": ["MockBeacon"] }
+    },
+    {
+      "ip": "192.0.2.150",
+      "location": {
+        "city": "São Paulo",
+        "country": "Brazil",
+        "country_code": "BR",
+        "coordinates": { "latitude": -23.5505, "longitude": -46.6333 }
+      },
+      "autonomous_system": { "asn": 64550, "name": "LatAmNet", "country_code": "BR" },
+      "services": [
+        {
+          "port": 8082,
+          "protocol": "HTTP",
+          "banner": "HTTP/1.1 401 Unauthorized",
+          "authentication_required": true
+        },
+        {
+          "port": 3306,
+          "protocol": "MYSQL",
+          "error_message": "Host '192.0.2.10' is not allowed to connect to this MySQL server",
+          "software": [{ "product": "mysql", "vendor": "oracle", "version": "5.7.36" }],
+          "access_restricted": true,
+          "vulnerabilities": [
+            { "cve_id": "CVE-2019-12345", "severity": "medium", "cvss_score": 5.0, "description": "Mock MySQL auth bypass" }
+          ]
+        }
+      ],
+      "threat_intelligence": { "security_labels": ["APPLICATION"], "risk_level": "medium" }
+    },
+    {
+      "ip": "203.0.113.201",
+      "location": {
+        "city": "Seoul",
+        "country": "South Korea",
+        "country_code": "KR",
+        "coordinates": { "latitude": 37.5665, "longitude": 126.978 }
+      },
+      "autonomous_system": { "asn": 64560, "name": "KoreaCloud", "country_code": "KR" },
+      "dns": { "hostname": "api.example.kr" },
+      "services": [
+        {
+          "port": 8443,
+          "protocol": "HTTPS",
+          "banner": "HTTP/1.1 200 OK",
+          "tls_enabled": true,
+          "certificate": {
+            "fingerprint_sha256": "ee44ff55aa66bb77cc88dd99ee00ff11aa22bb33cc44dd55ee66ff77aa88bb99",
+            "subject": "CN=api.example.kr, O=Example API",
+            "issuer": "CN=Example CA KR, O=Example CA KR",
+            "self_signed": false
+          },
+          "software": [{ "product": "tomcat", "vendor": "apache", "version": "9.0.73" }],
+          "vulnerabilities": [
+            { "cve_id": "CVE-2024-54321", "severity": "high", "cvss_score": 8.1, "description": "Mock remote code execution in servlet" }
+          ]
+        },
+        {
+          "port": 27017,
+          "protocol": "MONGODB",
+          "banner": "MongoDB 4.2.8",
+          "software": [{ "product": "mongodb", "vendor": "mongodb", "version": "4.2.8" }]
+        }
+      ],
+      "threat_intelligence": { "security_labels": ["API", "DATABASE"], "risk_level": "high" }
+    },
+    {
+      "ip": "198.51.100.77",
+      "location": {
+        "city": "Moscow",
+        "country": "Russia",
+        "country_code": "RU",
+        "coordinates": { "latitude": 55.7558, "longitude": 37.6173 }
+      },
+      "autonomous_system": { "asn": 64570, "name": "RusNet", "country_code": "RU" },
+      "services": [
+        {
+          "port": 80,
+          "protocol": "HTTP",
+          "banner": "HTTP/1.1 200 OK",
+          "software": [{ "product": "nginx", "vendor": "f5", "version": "1.18.0" }],
+          "vulnerabilities": [
+            { "cve_id": "CVE-2021-23017", "severity": "medium", "cvss_score": 5.3, "description": "Mock nginx vulnerability" }
+          ]
+        },
+        {
+          "port": 445,
+          "protocol": "SMB",
+          "banner": "Microsoft SMB",
+          "vulnerabilities": [
+            { "cve_id": "CVE-2017-0144", "severity": "critical", "cvss_score": 9.8, "description": "Mock SMB remote code exec" }
+          ]
+        }
+      ],
+      "threat_intelligence": { "security_labels": ["FILE_SHARE", "WEB_SERVER"], "risk_level": "critical", "malware_families": ["MockRAT"] }
+    }
+  ]
+}
