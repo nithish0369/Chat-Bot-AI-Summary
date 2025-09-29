@@ -59,8 +59,8 @@ Proj_Deep/
 
 ### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/yourusername/Proj_Deep.git
-cd Proj_Deep
+git clone https://github.com/nithish0369/Chat-Bot-AI-Summary.git
+cd Chat-Bot-AI-Summary
 ```
 
 ### Step 2: Install Dependencies
@@ -364,5 +364,6 @@ For questions or issues:
 4. **Error Handling**: Graceful handling of missing environment variables
 
 ---
+
 
 
