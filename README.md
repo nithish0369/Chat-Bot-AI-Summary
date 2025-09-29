@@ -12,9 +12,9 @@ A full-stack AI-powered application that analyzes and summarizes Censys host dat
 - **Integration**: Seamless communication between frontend and backend via JSON API
 
 ### ✅ AI Integration
-- **LLM Integration**: Perplexity AI (Sonar model) for intelligent data summarization
-- **Prompt Engineering**: Sophisticated multi-section prompts for structured output
-- **AI Tools**: Leveraged Cursor throughout development
+- **LLM Integration**: Perplexity AI (Sonar model) for intelligent data summarization.
+- **Prompt Engineering**: Sophisticated multi-section prompts for structured output.
+- **AI Tools**: Leveraged Cursor, chatgpt and perplexity throughout development.
 
 ### ✅ Summarization Output
 - **Structured Reports**: 7-section analysis format (Executive Summary, Metrics, Risk Assessment, etc.)
